@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.20;
+}
+
+/*Homepage*/
+.waitingroom {
+  height: 100vh;
+  width: 100%;
+  background-Image: url(waitingroom.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1 {
+  width: 50%;
+  margin-left: 24rem;
+  padding-left: 1.5rem;
+  color: white;
+  transition: 0.8s;
+}
+
+.guests {
+  text-align: center;
+  marging-top: 360px;
+}
+
+.guests a {
+  text-decoration: none;
+}
+
+.guests a:hover {
+  color: #706fd3;
+  transition: 0.8s;
+}
+
+.btn {
+  border: 1px solid #ffda79;
+  background-color: #ffda79;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-style: "montserrat";
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover {
+  color: #fff;
+}
+
+/*Just me page*/
+#wrap {
+  height: 100vh;
+  width: 100%;
+  background-Image: url(sparkle.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.text {
+  width: 35%;
+  margin-left: 25rem;
+}
+
+.hands {
+  height: 280px;
+  width: 600%;
+  opacity: 0.8;
+  background-image: url(handscut.png);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: fadeIn 8s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fademe {
+  animation: fade 3s;
+  color: #654062;
+  align-items: center;
+  margin-left: 30rem;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  height: 30px;
+  align-items: center;
+  width: 100%;
+}
+
+.nav ul li a {
+  text-decoration: none;
+}
+
+
+#tablefortwo {
+  height: 100vh;
+  width: 100%;
+  background-Image: url(tabletwo.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#two {
+  color: #127681;
+  margin-left: 30rem;
+}
+
+
+#tablefortwo h2 {
+  color: white;
+  text-align: center;
+  background-color: #ccafaf;
+  width: 87px;
+  padding: 0.5rem;
+  margin-left: 38rem;
+  opacity: 0.8;
+}
+
+#tablefortwo {
+  background-color: f4f7c5;
+}
+
+#input {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ccafaf;
+  margin: 30px;
+  padding: 25px;
+  opacity: 0.7;
+}
+
+h3 {
+  margin-left: 25rem;
+  width: 42%;
+  color: white;
+}
+
+/*I'm leaving page*/
+#club {
+  height: 100vh;
+  width: 100%;
+  background-Image: url(sky.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.audio {
+  justify-content: center;
+  display: flex;
+}
+
+.audio h4 {
+  margin: 1.5rem;
+}
+
+.highway {
+  height: 200px;
+  width: 500%;
+  display: block;
+  background-image: url(road.jpg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-repeat: repeat-x;
+  animation: highway 5s linear infinite;
+}
+
+.city {
+  height: 250px;
+  width: 500%;
+  background-image: url(city.png);
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-repeat: repeat-x;
+  animation: city 20s linear infinite;
+  display: block;
+}
+
+.car {
+  width: 400px;
+  left: 50%;
+  bottom: 100px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+}
+
+.car img {
+  width: 100%;
+  animation: car 1s linear infinite;
+}
+
+.wheel {
+  left: 50%;
+  bottom: 178px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+}
+
+.wheel img {
+  width: 72px;
+  height: 72px;
+}
+
+.back-wheel {
+  left: -165px;
+  position: absolute;
+  animation: wheel 1s linear infinite;
+}
+
+.front-wheel {
+  left: 80px;
+  position: absolute;
+  animation: wheel 1s linear infinite;
+}
+
+@keyframes highway {
+  100% {
+    transform: translateX(-3400px);
+  }
+}
+
+@keyframes city {
+  100% {
+    transform: translateX(-1400px);
+  }
+}
+
+@keyframes car {
+  100% {
+    transform: translateY(-1px);
+  }
+
+  50% {
+    transform: translateY(1px);
+  }
+
+  0% {
+    transform: translateY(-1px);
+  }
+}
+
+@keyframes wheel {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.conversation h1 {
+  color: #07031a;
+}
+
+/*end of the I'm leaving Page*/
+/*common elements*/
+@media screen and (max-width:70rem) {
+  .waitingroom h1 {
+    margin-left: 10rem;
+  }
+
+  .waitingroom h3 {
+    margin-left: 10rem;
+  }
+
+  #two {
+    margin-left: 10rem;
+  }
+
+  #tablefortwo h2 {
+    margin-left: 10rem;
+  }
+
+  .conversation h1 {
+    margin-left: 10rem;
+  }
+}
